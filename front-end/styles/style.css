@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(0, 136, 255);
+}
+.carousel{
+    margin: 0%;
+}
+.btn-warning{
+    border-radius: 50px;
+    font-size: 30px;
+    width: 200px;
+    height: 80px;
+    color: white;
+}
+.btn-warning :hover{
+    color: #000000;
+}
+.menu{
+    background-color: white;
+    height: 170px;
+}
+
