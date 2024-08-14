@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(0, 136, 255);
+    background-color: rgb(0, 0, 0);
 }
 .carousel{
     margin: 0%;
@@ -16,6 +16,117 @@ body{
 }
 .menu{
     background-color: white;
-    height: 170px;
+    height: 200px;
+    padding: 0px 600px 20px 600px;
 }
+.comidas{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.sashimi{
+    width: 120px;
+    height: 120px;
+    background-color:  #FFAA2C;
+    border-radius: 50px;
+}
+.sushi{
+    width: 120px;
+    height: 120px;
+    background-color:  #FFAA2C;
+    border-radius: 50px;
+}
+
+.temaki{
+    width: 120px;
+    height: 120px;
+    background-color:  #FFAA2C;
+    border-radius: 50px;
+}
+.cards{
+    background-color: #FFF3D3;
+    padding: 40px 130px 40px 130px;
+    
+}
+.cards-superior{
+    
+    display: flex;
+    justify-content: space-between;
+   
+}
+.card-01{
+    width: 460px;
+height: 352px;
+flex-shrink: 0;
+background-color: white;
+border-radius: 40px;
+
+}
+.card-02{
+    width: 460px;
+height: 352px;
+flex-shrink: 0;
+background-color: white;
+border-radius: 40px;
+
+}
+.card-03{
+    width: 460px;
+    height: 352px;
+flex-shrink: 0;
+background-color: white;
+border-radius: 40px;
+
+}
+.cards-inferior{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px 200px 0px;
+}
+
+.card-04{
+    width: 750px;
+height: 352px;
+flex-shrink: 0;
+background-color: white;
+border-radius: 40px;
+
+}
+.card-05{
+    width: 750px;
+height: 352px;
+flex-shrink: 0;
+background-color: white;
+border-radius: 40px;
+
+}
+.part-celular{
+    background-color:#FFAA2C ;
+    display: flex;
+}
+.instal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-store{
+    width: 150px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 30px;
+}
+.google-pay{
+    width: 150px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 30px;
+}
+
+
+
+
+
+
 
