@@ -1,132 +1,220 @@
-body{
+body {
     background-color: rgb(0, 0, 0);
 }
-.carousel{
+
+.carousel {
     margin: 0%;
 }
-.btn-warning{
+
+.btn-warning {
     border-radius: 50px;
     font-size: 30px;
     width: 200px;
     height: 80px;
     color: white;
 }
-.btn-warning :hover{
+
+.btn-warning :hover {
     color: #000000;
 }
-.menu{
+
+.menu {
     background-color: white;
     height: 200px;
     padding: 0px 600px 20px 600px;
 }
-.comidas{
+
+.comidas {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-between;
 }
 
-.sashimi{
+.sashimi {
     width: 120px;
     height: 120px;
-    background-color:  #FFAA2C;
-    border-radius: 50px;
-}
-.sushi{
-    width: 120px;
-    height: 120px;
-    background-color:  #FFAA2C;
+    background-color: #FFAA2C;
     border-radius: 50px;
 }
 
-.temaki{
+.sushi {
     width: 120px;
     height: 120px;
-    background-color:  #FFAA2C;
+    background-color: #FFAA2C;
     border-radius: 50px;
 }
-.cards{
+
+.temaki {
+    width: 120px;
+    height: 120px;
+    background-color: #FFAA2C;
+    border-radius: 50px;
+}
+
+.cards {
     background-color: #FFF3D3;
     padding: 40px 130px 40px 130px;
-    
+
 }
-.cards-superior{
-    
+
+.cards-superior {
+
     display: flex;
     justify-content: space-between;
-   
-}
-.card-01{
-    width: 460px;
-height: 352px;
-flex-shrink: 0;
-background-color: white;
-border-radius: 40px;
 
 }
-.card-02{
-    width: 460px;
-height: 352px;
-flex-shrink: 0;
-background-color: white;
-border-radius: 40px;
 
-}
-.card-03{
+.card-01 {
     width: 460px;
     height: 352px;
-flex-shrink: 0;
-background-color: white;
-border-radius: 40px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 40px;
 
 }
-.cards-inferior{
+
+.card-02 {
+    width: 460px;
+    height: 352px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 40px;
+
+}
+
+.card-03 {
+    width: 460px;
+    height: 352px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 40px;
+
+}
+
+.cards-inferior {
     display: flex;
     justify-content: space-between;
     padding: 40px 0px 200px 0px;
 }
 
-.card-04{
+.card-04 {
     width: 750px;
-height: 352px;
-flex-shrink: 0;
-background-color: white;
-border-radius: 40px;
+    height: 352px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 40px;
 
 }
-.card-05{
+
+.card-05 {
     width: 750px;
-height: 352px;
-flex-shrink: 0;
-background-color: white;
-border-radius: 40px;
+    height: 352px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 40px;
 
 }
-.part-celular{
-    background-color:#FFAA2C ;
+
+.part-celular {
+    background-color: #FFAA2C;
     display: flex;
 }
-.instal{
+
+.instal {
     display: flex;
     justify-content: space-between;
 }
 
-.app-store{
-    width: 150px;
-    height: 50px;
-    background-color: #000000;
-    border-radius: 30px;
-}
-.google-pay{
+.app-store {
     width: 150px;
     height: 50px;
     background-color: #000000;
     border-radius: 30px;
 }
 
+.google-pay {
+    width: 150px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 30px;
+}
+
+.video {
+    display: flex;
+    background-color: #FFF3D3;
+
+}
+
+.cards1 {
+    background-color: #FFF3D3;
+    padding: 200px 100px 20px 100px;
 
 
+}
+
+.cards-superior1 {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-011 {
+    width: 200px;
+    height: 280px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.card-021 {
+    width: 200px;
+    height: 280px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.card-031 {
+    width: 200px;
+    height: 280px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.cards-inferior1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 20px 0px;
+
+}
+
+.card-041 {
+    width: 400px;
+    height: 200px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 10px;
 
 
+}
 
+.card-051 {
+    width: 400px;
+    height: 200px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 10px;
+}
 
+.youtube {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF3D3;
+    padding: 200px 0px 150px 0px ;
+}
