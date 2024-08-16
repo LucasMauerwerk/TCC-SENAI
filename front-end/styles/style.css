@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: #FFF3D3;
 }
 
 .carousel {
@@ -12,44 +12,36 @@ body {
     width: 200px;
     height: 80px;
     color: white;
+    position: absolute;
+   
+    
 }
 
-.btn-warning :hover {
-    color: #000000;
-}
+
 
 .menu {
     background-color: white;
     height: 200px;
-    padding: 0px 600px 20px 600px;
+    padding: 20px 600px 20px 600px;
 }
+
 
 .comidas {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sashimi {
-    width: 120px;
-    height: 120px;
-    background-color: #FFAA2C;
-    border-radius: 50px;
+.sashimi img {
+    width: 10rem;
+    
 }
 
-.sushi {
-    width: 120px;
-    height: 120px;
-    background-color: #FFAA2C;
-    border-radius: 50px;
+.sushi img {
+    width: 10rem;
 }
 
-.temaki {
-    width: 120px;
-    height: 120px;
-    background-color: #FFAA2C;
-    border-radius: 50px;
+.temaki img {
+    width: 10rem;
 }
 
 .cards {
@@ -95,7 +87,7 @@ body {
 .cards-inferior {
     display: flex;
     justify-content: space-between;
-    padding: 40px 0px 200px 0px;
+    padding: 40px 0px 100px 0px;
 }
 
 .card-04 {
@@ -119,6 +111,19 @@ body {
 .part-celular {
     background-color: #FFAA2C;
     display: flex;
+    margin-top: 5%;
+}
+
+.card-celular{
+    width: 25rem;
+    position: absolute;
+    z-index: 2;
+    margin-left: 15%;
+}
+
+.direita{
+    margin: 3%;
+    margin-left: 50%;
 }
 
 .instal {
