@@ -2,8 +2,9 @@ body {
     background-color: #FFF3D3;
 }
 
-.carousel {
-    margin: 0%;
+.img-fundo {
+    margin: 0;
+
 }
 
 .btn-warning {
@@ -23,12 +24,14 @@ body {
     background-color: white;
     height: 200px;
     padding: 20px 600px 20px 600px;
+    
 }
 
 
 .comidas {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .sashimi img {
@@ -43,6 +46,9 @@ body {
 .temaki img {
     width: 10rem;
 }
+hr{
+    background-color: red;
+}
 
 .cards {
     background-color: #FFF3D3;
@@ -56,6 +62,10 @@ body {
     justify-content: space-between;
 
 }
+.text-card{
+    text-align: center;
+    justify-content: space-between;
+}
 
 .card-01 {
     width: 460px;
@@ -63,6 +73,10 @@ body {
     flex-shrink: 0;
     background-color: white;
     border-radius: 40px;
+    display: flex;
+    padding: 0px 50px 0px 50px;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -96,6 +110,10 @@ body {
     flex-shrink: 0;
     background-color: white;
     border-radius: 40px;
+    display: flex;
+    padding: 0px 80px 0px 50px;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -112,6 +130,7 @@ body {
     background-color: #FFAA2C;
     display: flex;
     margin-top: 5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-celular{
