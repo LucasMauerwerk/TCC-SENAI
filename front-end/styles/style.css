@@ -14,8 +14,8 @@ body {
     height: 80px;
     color: white;
     position: absolute;
-   
-    
+
+
 }
 
 
@@ -24,19 +24,19 @@ body {
     background-color: white;
     height: 200px;
     padding: 20px 600px 20px 600px;
-    
+
 }
 
 
 .comidas {
-  display: flex;
-  justify-content: space-between;
-  
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .sashimi img {
     width: 10rem;
-    
+
 }
 
 .sushi img {
@@ -46,7 +46,8 @@ body {
 .temaki img {
     width: 10rem;
 }
-hr{
+
+hr {
     background-color: red;
 }
 
@@ -62,7 +63,8 @@ hr{
     justify-content: space-between;
 
 }
-.text-card{
+
+.text-card {
     text-align: center;
     justify-content: space-between;
 }
@@ -74,11 +76,49 @@ hr{
     background-color: white;
     border-radius: 40px;
     display: flex;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 30px 0px 45px;
     justify-content: space-between;
     align-items: center;
 
 }
+
+
+.titulo {
+    color: #141414;
+    font-family: Inter;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 0px 30px 0px;
+}
+
+.sub-card {
+    color: #141414;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 0px 25px 0px;
+}
+
+.preCo {
+    color: red;
+    color: #FF0303;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 0px 20px 0px;
+}
+.cards-superior :hover {
+     background-color: rgb(255, 0, 0);
+    color: #ffffff;
+}
+
+
 
 .card-02 {
     width: 460px;
@@ -86,6 +126,10 @@ hr{
     flex-shrink: 0;
     background-color: white;
     border-radius: 40px;
+    display: flex;
+    padding: 0px 30px 0px 45px;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -95,6 +139,10 @@ hr{
     flex-shrink: 0;
     background-color: white;
     border-radius: 40px;
+    display: flex;
+    padding: 0px 30px 0px 45px;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -133,35 +181,39 @@ hr{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card-celular{
-    width: 25rem;
+.card-celular {
+    width: 26.4rem;
     position: absolute;
     z-index: 2;
     margin-left: 15%;
 }
 
-.direita{
+.direita {
     margin: 3%;
     margin-left: 50%;
 }
+.escrita h1{
+    padding: 0px 0px 20px 25px;
+}
 
 .instal {
+    padding: 20px 40px 0px 40px;
     display: flex;
     justify-content: space-between;
 }
 
 .app-store {
-    width: 150px;
-    height: 50px;
+    width: 160px;
+    height: 48px;
     background-color: #000000;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .google-pay {
-    width: 150px;
-    height: 50px;
+    width: 160px;
+    height: 48px;
     background-color: #000000;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .video {
@@ -240,5 +292,11 @@ hr{
     display: flex;
     justify-content: center;
     background-color: #FFF3D3;
-    padding: 200px 0px 150px 0px ;
+    padding: 200px 0px 150px 0px;
 }
+
+
+
+
+
+
