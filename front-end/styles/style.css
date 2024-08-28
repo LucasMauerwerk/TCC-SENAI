@@ -3,8 +3,11 @@ body {
 }
 
 .img-fundo {
-    margin: 0;
-
+    width: 100%;
+    height: 600px;
+    background-image: url('../assents/background.jpg');
+    background-size:cover;
+    backdrop-filter: blur(100px);
 }
 
 .btn-warning {
@@ -24,6 +27,8 @@ body {
     background-color: white;
     height: 200px;
     padding: 20px 600px 20px 600px;
+    
+    
 
 }
 
@@ -61,6 +66,7 @@ hr {
 
     display: flex;
     justify-content: space-between;
+   
 
 }
 
@@ -79,6 +85,7 @@ hr {
     padding: 0px 30px 0px 45px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -90,7 +97,7 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 0px 0px 30px 0px;
+    padding: 0px 0px 15px 0px;
 }
 
 .sub-card {
@@ -111,11 +118,14 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 18px 0px;
 }
 .cards-superior :hover {
      background-color: rgb(255, 0, 0);
-    color: #ffffff;
+
+     p{
+        color: #ffffff;
+     }
 }
 
 
@@ -130,6 +140,7 @@ hr {
     padding: 0px 30px 0px 45px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -143,6 +154,7 @@ hr {
     padding: 0px 30px 0px 45px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -162,6 +174,7 @@ hr {
     padding: 0px 80px 0px 50px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -172,13 +185,14 @@ hr {
     background-color: white;
     border-radius: 40px;
 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .part-celular {
     background-color: #FFAA2C;
     display: flex;
     margin-top: 5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 8px 20px rgba(0, 0, 0, 10.3);
 }
 
 .card-celular {
