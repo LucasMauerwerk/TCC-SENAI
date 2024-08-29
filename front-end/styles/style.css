@@ -1,5 +1,23 @@
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .bungee-tint-regular {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 body {
     background-color: #FFF3D3;
+    
 }
 
 header {
@@ -50,6 +68,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+    font-family: "Anton", sans-serif;
 }
 
 
@@ -59,7 +78,7 @@ header {
     height: 200px;
     padding: 30px 600px 25px 600px;
 
-
+    font-family: "Anton", sans-serif;
 
 }
 
@@ -129,6 +148,7 @@ hr {
     font-weight: 400;
     line-height: normal;
     padding: 0px 0px 5px 0px;
+    font-family: "Anton", sans-serif;
 }
 
 .sub-card {
@@ -139,6 +159,7 @@ hr {
     font-weight: 400;
     line-height: normal;
     padding: 0px 0px 2px 0px;
+    font-family: "Didact Gothic", sans-serif;
 }
 
 .preCo {
@@ -150,6 +171,7 @@ hr {
     font-weight: 400;
     line-height: normal;
     padding: 0px 0px 10px 0px;
+    font-family: "Anton", sans-serif;
 }
 
 .rating {
@@ -244,7 +266,7 @@ hr {
     font-size: 25px;
     background-color: #ffc400;
     color: #ffffff;
-    
+    font-family: "Anton", sans-serif;
 }
 
 .card-04 {
@@ -266,6 +288,7 @@ hr {
         font-weight: 400;
         line-height: normal;
         padding: 0px 0px 75px 0px;
+        font-family: "Anton", sans-serif;
     }
    
 }
@@ -276,6 +299,7 @@ hr {
     flex-shrink: 0;
     background-color: white;
     border-radius: 40px;
+   
 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     .titulo {
@@ -286,6 +310,7 @@ hr {
         font-weight: 400;
         line-height: normal;
         padding: 0px 0px 50px 0px;
+        font-family: "Anton", sans-serif;
     }
 }
 
@@ -310,6 +335,7 @@ hr {
 
 .escrita h1 {
     padding: 0px 0px 20px 25px;
+    font-family: "Anton", sans-serif;
 }
 
 .instal {
@@ -409,4 +435,43 @@ hr {
     justify-content: center;
     background-color: #FFF3D3;
     padding: 200px 0px 150px 0px;
+}
+.titulo-car{
+    text-align: center;
+}
+.nosso{
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+}
+.carda{
+
+    font-size: 100px;
+    color: #FF0303;
+    font-family: "Bungee Tint", sans-serif;
+}
+.comi-car{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 250px 0px 250px;
+}
+.c-01{
+    
+width: 650px;
+height: 150px;
+background-color: #ffc400;
+display: flex;
+justify-content: space-between;
+padding:  0px 30px 0px 30px ;
+
+
+.img{
+    padding: 2px 5px 50px 5px;
+}
+.des{
+    padding: 30px 5px 50px 5px;
+}
+.preco{
+    padding: 50px 5px 50px 5px;
+    color: #FF0303;
+}
 }
