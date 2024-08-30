@@ -8,9 +8,10 @@
     font-weight: 400;
     font-style: normal;
   }
-  .bungee-tint-regular {
-    font-family: "Bungee Tint", sans-serif;
-    font-weight: 400;
+  
+  .baskervville-sc-regular {
+    font-family: "Baskervville SC", serif;
+    font-weight: 600;
     font-style: normal;
   }
   
@@ -379,51 +380,22 @@ hr {
 }
 
 .card-011 {
-    width: 200px;
+    width: 250px;
     height: 280px;
     flex-shrink: 0;
     background-color: white;
     border-radius: 10px;
-
 }
 
-.card-021 {
-    width: 200px;
-    height: 280px;
-    flex-shrink: 0;
-    background-color: white;
-    border-radius: 10px;
-
-}
-
-.card-031 {
-    width: 200px;
-    height: 280px;
-    flex-shrink: 0;
-    background-color: white;
-    border-radius: 10px;
-
-}
-
-.cards-inferior1 {
+.div-cards-inferior1 {
     display: flex;
     justify-content: space-between;
     padding: 0px 0px 20px 0px;
-
+    width: 45vw;
 }
 
-.card-041 {
-    width: 400px;
-    height: 200px;
-    flex-shrink: 0;
-    background-color: white;
-    border-radius: 10px;
-
-
-}
-
-.card-051 {
-    width: 400px;
+.card-inferior {
+    width: 410px;
     height: 200px;
     flex-shrink: 0;
     background-color: white;
@@ -438,16 +410,17 @@ hr {
 }
 .titulo-car{
     text-align: center;
+    padding:  20px 0px 10px 100px ;
 }
 .nosso{
     font-size: 50px;
     font-family: "Anton", sans-serif;
+    text-decoration: none;
 }
 .carda{
-
     font-size: 100px;
     color: #FF0303;
-    font-family: "Bungee Tint", sans-serif;
+    font-family: "Baskervville SC", serif;
 }
 .comi-car{
     display: flex;
@@ -458,7 +431,7 @@ hr {
     
 width: 650px;
 height: 150px;
-background-color: #ffc400;
+
 display: flex;
 justify-content: space-between;
 padding:  0px 30px 0px 30px ;
@@ -469,9 +442,11 @@ padding:  0px 30px 0px 30px ;
 }
 .des{
     padding: 30px 5px 50px 5px;
+    font-family: "Anton", sans-serif;
 }
 .preco{
     padding: 50px 5px 50px 5px;
     color: #FF0303;
+    font-family: "Anton", sans-serif;
 }
 }
