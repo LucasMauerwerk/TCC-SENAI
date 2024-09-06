@@ -19,6 +19,34 @@
 body {
     background-color: #FFF3D3;
     
+    
+}
+
+
+
+.sidebar.open{
+    right: 0;
+}
+.sidebar-close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+   
+}
+.cart-tems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 3rem;
+    
+}
+.cart-tems{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #47474793;
 }
 
 header {
@@ -37,6 +65,7 @@ header {
 
     }
 }
+
 
 .hed {
     display: inline-block;
@@ -475,7 +504,7 @@ padding: 0px 0px 0px 350px;
 
 
 .pegajoso {
-    position: -webkit-sticky; /* Suporte para Safari */
+    
     position: sticky;
     bottom: 60px; /* Distância do fundo da janela */
     padding:  20px 20px 0px 1750px ;
