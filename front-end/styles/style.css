@@ -133,7 +133,7 @@ header {
 }
 
 hr {
-    background-color: red;
+    
 }
 
 .cards {
@@ -493,7 +493,9 @@ padding: 0px 0px 0px 350px;
         width: 100%;
     }
 }
-
+hr{
+    background-color: #000000;
+}
 
 
 
