@@ -42,15 +42,16 @@ body {
 }
 
 button {
-    background-color: #28a745;
+    background-color: #f80808;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 50px;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #000000;
 }
 
 

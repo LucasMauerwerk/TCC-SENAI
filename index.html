@@ -245,8 +245,8 @@
           <div class="-c"><img src="front-end/assents/sashimi.png" alt="" style="width: 10rem;"></div>
           <div class="des">Sashimi <br> Melhor salmaão do Brasil <br>MAIS PEDIDO</div>
           <div class="comprar">
-            <div class="preco">654654</div>
-            <div class="add" style="display: flex;"> <button onclick="addToCart('Produto 1', 50)" style="border-radius: 50px; margin: 0%; border: 0cap; background-color: rgb(0, 255, 64);">+</button></div>
+            <div class="preco">R$50,00</div>
+            <div class="add" style="display: flex;"> <button onclick="addToCart('sashimi', 50)" style="border-radius: 50px; margin: 0%; border: 0cap; background-color: rgb(0, 255, 64);">+</button></div>
           </div>
         </div></a>
 <hr>
@@ -383,6 +383,16 @@ function addToCart(productName, price) {
     updateCartUI();
 }
 
+function removeFromCart(index) {
+    // Remover item do carrinho
+    const item = cart[index];
+    cart.splice(index, 1); // Remove o item no índice fornecido
+    totalPrice -= item.price; // Subtrai o preço do total
+
+    // Atualizar a exibição do carrinho
+    updateCartUI();
+}
+
 function updateCartUI() {
     const cartItems = document.getElementById('cart-items');
     const totalPriceElement = document.getElementById('total-price');
@@ -391,15 +401,25 @@ function updateCartUI() {
     cartItems.innerHTML = '';
 
     // Adicionar itens do carrinho
-    cart.forEach(item => {
+    cart.forEach((item, index) => {
         const li = document.createElement('li');
         li.textContent = `${item.name} - R$ ${item.price.toFixed(2)}`;
+
+        // Criar botão de remoção
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remover';
+        removeButton.className = 'remove-btn';
+        removeButton.onclick = () => removeFromCart(index);
+
+        // Adicionar o botão de remoção ao item da lista
+        li.appendChild(removeButton);
         cartItems.appendChild(li);
     });
 
     // Atualizar o total
     totalPriceElement.textContent = totalPrice.toFixed(2);
 }
+
     </script>
 
 
