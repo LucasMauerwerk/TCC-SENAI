@@ -37,20 +37,16 @@
           
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        
-          <div class="sidebar">
-            <div class="cart-menu">
-              <h3>my cart</h3>
-              <div class="cart-tems">test 1</div>
-             </div>
-             <div class="sidebar--footer">
-              <div class="total--amount">
-                <h5>total</h5>
-                <div class="cart-total">$0.00</div>
-              </div>
-              <button class="checkout-btn">chechasw</button>
-             </div>
-          </div>
+        <div class="sidebar">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items">
+            <!-- Itens do carrinho serão adicionados aqui -->
+        </ul>
+        <p>Total: R$ <span id="total-price">0.00</span></p>
+    </div>
+
+   
+          
       </div>
    
       <div class="text-banner">
@@ -250,7 +246,7 @@
           <div class="des">Sashimi <br> Melhor salmaão do Brasil <br>MAIS PEDIDO</div>
           <div class="comprar">
             <div class="preco">654654</div>
-            <div class="add" style="display: flex;"> <button style="border-radius: 50px; margin: 0%; border: 0cap; background-color: rgb(0, 255, 64);">+</button></div>
+            <div class="add" style="display: flex;"> <button onclick="addToCart('Produto 1', 50)" style="border-radius: 50px; margin: 0%; border: 0cap; background-color: rgb(0, 255, 64);">+</button></div>
           </div>
         </div></a>
 <hr>
@@ -372,6 +368,38 @@
     function closeRightMenu() {
       document.getElementById("rightMenu").style.display = "none";
     }
+
+
+
+    let cart = [];
+let totalPrice = 0;
+
+function addToCart(productName, price) {
+    // Adicionar item ao carrinho
+    cart.push({ name: productName, price: price });
+    totalPrice += price;
+
+    // Atualizar a exibição do carrinho
+    updateCartUI();
+}
+
+function updateCartUI() {
+    const cartItems = document.getElementById('cart-items');
+    const totalPriceElement = document.getElementById('total-price');
+    
+    // Limpar itens existentes
+    cartItems.innerHTML = '';
+
+    // Adicionar itens do carrinho
+    cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.name} - R$ ${item.price.toFixed(2)}`;
+        cartItems.appendChild(li);
+    });
+
+    // Atualizar o total
+    totalPriceElement.textContent = totalPrice.toFixed(2);
+}
     </script>
 
 

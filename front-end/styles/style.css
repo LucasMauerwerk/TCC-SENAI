@@ -22,32 +22,39 @@ body {
     
 }
 
-
-
-.sidebar.open{
-    right: 0;
-}
-.sidebar-close{
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    cursor: pointer;
-   
-}
-.cart-tems{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 3rem;
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
     
 }
-.cart-tems{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 5px;
-    border-radius: 5px;
-    border: 1px solid #47474793;
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    flex: 1;
 }
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+
 
 header {
     z-index: 3;
