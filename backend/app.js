@@ -14,9 +14,9 @@ app.use(express.json());
 
 // Importar rotas
 const rotasBebidas = require('./rotas/RotasBebidas');
-const rotasComidas = require('./rotas/RotasBebidas');
-const rotasPedidos = require('./rotas/RotasBebidas');
-const rotasPessoas = require('./rotas/RotasBebidas');
+const rotasComidas = require('./rotas/RotasComidas');
+const rotasPedidos = require('./rotas/RotasPedidos');
+const rotasPessoas = require('./rotas/RotasPessoas');
 
 // Usar rotas
 app.use('/api', rotasBebidas);

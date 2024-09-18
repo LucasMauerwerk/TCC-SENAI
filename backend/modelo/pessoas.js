@@ -23,7 +23,7 @@ pessoas.init({
     }
 }, {
     sequelize,
-    modelName: 'produtos', // tem que ser exatamente igual o nome da tabela
+    modelName: 'pessoas', // tem que ser exatamente igual o nome da tabela
     timestamps: false
 });
 
