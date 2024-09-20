@@ -16,7 +16,7 @@ app.use(express.json());
 const rotasBebidas = require('./rotas/RotasBebidas');
 const rotasComidas = require('./rotas/RotasComidas');
 const rotasPedidos = require('./rotas/RotasPedidos');
-const rotasPessoas = require('./rotas/RotasPessoas');
+const rotasPessoas= require('./rotas/RotasPessoas');
 
 // Usar rotas
 app.use('/api', rotasBebidas);

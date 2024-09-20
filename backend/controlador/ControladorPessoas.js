@@ -1,4 +1,4 @@
-const Pessoas = require('../modelo/Pessoas');
+const Pessoas = require('../modelo/pessoas');
 //const EntradaEstoque = require('../models/EntradaEstoque');
 //const SaidaEstoque = require('../models/SaidaEstoque');
 
@@ -12,10 +12,10 @@ const PessoasController = {
         }
     },
 
-    getAllPessoass: async (req, res) => {
+    getAllPessoas: async (req, res) => {
         try {
-            const pessoass = await Pessoas.findAll();
-            res.json(pessoass);
+            const pessoas = await Pessoas.findAll();
+            res.json(pessoas);
         } catch (error) {
             res.status(500).send(error.message);
         }
@@ -39,7 +39,7 @@ const PessoasController = {
             if (!pessoas) {
                 return res.status(404).send('Pessoas não encontrado');
             }
-            await pessoas.update(req.body);
+            await Pessoas.update(req.body);
             res.send('Pessoas atualizado com sucesso');
         } catch (error) {
             res.status(500).send(error.message);
