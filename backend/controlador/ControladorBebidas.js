@@ -14,7 +14,7 @@ const BebidasController = {
 
     getAllBebidass: async (req, res) => {
         try {
-            const Bebidass = await Bebidas.findAll();
+            const bebidass = await Bebidas.findAll();
             res.json(bebidass);
         } catch (error) {
             res.status(500).send(error.message);
