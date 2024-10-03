@@ -14,8 +14,8 @@
             <div class="form">
               <label for="chk" aria-hidden="true">Sign up</label>
               <input type="text" name="nome" id="nome" placeholder="Nome" required="">
-              <input type="number" name="email" id="email" placeholder="WhatsApp" required="">
-              <input type="text" name="broj" id="broj" placeholder="Endereço" required="">
+              <input type="number" name="whatsapp" id="whatsapp" placeholder="WhatsApp" required="">
+              <input type="text" name="endereco" id="endereco" placeholder="Endereço" required="">
               <input type="password" name="pswd" id="pswd" placeholder="Senha" required="">
               <button onclick="cadastrarPessoa()">Sign up</button>
             </div>
@@ -24,7 +24,7 @@
           <div class="login">
             <div class="form">
               <label for="chk" aria-hidden="true">Login</label>
-              <input type="email" name="email" placeholder="WhatsApp" required="">
+              <input type="email" name="whatsapp" placeholder="WhatsApp" required="">
               <input type="password" name="pswd" placeholder="Senha" required="">
               <button>Login</button>
             </div>
@@ -35,10 +35,9 @@
 <script>
   function cadastrarPessoa() {
             // Captura os valores dos inputs
-            alert('funciona')
             const nome = document.getElementById('nome').value;
-            const whatsapp = document.getElementById('email').value;
-            const endereco = document.getElementById('broj').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const endereco = document.getElementById('endereco').value;
             const senha = document.getElementById('pswd').value;
            
 
@@ -46,8 +45,8 @@
             // Cria o objeto com os dados
             const pessoa = {
                 nome: nome,
-                email: whatsapp,
-                broj:endereco, // Converte a idade para número
+                whatsapp: whatsapp,
+                endereco:endereco, // Converte a idade para número
                 senha: senha,
                 
                 
