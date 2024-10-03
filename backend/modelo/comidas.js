@@ -9,14 +9,14 @@ comidas.init({
         primaryKey: true,
         autoIncrement: true
     },
-    nome: {
-        type: DataTypes.STRING(45)
-    },
-    descricao: {
+    tipo: {
         type: DataTypes.TEXT
     },
     preco: {
         type: DataTypes.DECIMAL
+    },
+    descricao: {
+        type: DataTypes.TEXT
     },
     peso: {
         type: DataTypes.STRING(45)

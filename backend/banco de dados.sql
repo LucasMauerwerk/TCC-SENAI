@@ -94,7 +94,7 @@ LOCK TABLES `pedidos` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `pessoas`
+-- Table structure for table `Pessoas`
 --
 
 DROP TABLE IF EXISTS `pessoas`;
@@ -111,12 +111,12 @@ CREATE TABLE `pessoas` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `pessoas`
+-- Dumping data for table `Pessoas`
 --
 
 LOCK TABLES `pessoas` WRITE;
-/*!40000 ALTER TABLE `pessoas` DISABLE KEYS */;
-/*!40000 ALTER TABLE `pessoas` ENABLE KEYS */;
+/*!40000 ALTER TABLE `Pessoas` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Pessoas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

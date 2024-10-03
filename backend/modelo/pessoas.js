@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-class pessoas extends Model {}
+class Pessoas extends Model {}
 
-pessoas.init({
-    idlogin: {
+Pessoas.init({
+    id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
@@ -23,8 +23,8 @@ pessoas.init({
     }
 }, {
     sequelize,
-    modelName: 'produtos', // tem que ser exatamente igual o nome da tabela
+    modelName: 'pessoas', // tem que ser exatamente igual o nome da tabela
     timestamps: false
 });
 
-module.exports = pessoas;
+module.exports = Pessoas;

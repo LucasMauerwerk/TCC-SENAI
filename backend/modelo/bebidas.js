@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-class bebidas extends Model {}
+class Bebidas extends Model {}
 
-bebidas.init({
-    idbebidas: {
+Bebidas.init({
+    idbebida: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
@@ -24,4 +24,4 @@ bebidas.init({
     timestamps: false
 });
 
-module.exports = bebidas;
+module.exports = Bebidas;

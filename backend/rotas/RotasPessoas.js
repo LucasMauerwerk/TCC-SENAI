@@ -5,8 +5,8 @@ const ProdutoController = require('../controlador/ControladorPessoas');
 // Rota para criar um novo produto
 router.post('/pessoas', ProdutoController.createPessoas);
 
-// Rota para obter todos os pessoas
-router.get('/pessoas', ProdutoController.getAllPessoass);
+// Rota para obter todos os Pessoas
+router.get('/pessoas', ProdutoController.getAllPessoas);
 
 // Rota para obter um produto pelo ID
 router.get('/pessoas/:id', ProdutoController.getPessoasById);
@@ -18,9 +18,9 @@ router.put('/pessoas/:id', ProdutoController.updatePessoas);
 router.delete('/pessoas/:id', ProdutoController.deletePessoas);
 
 // Rota para registrar entrada de estoque
-//router.post('/pessoas/:id/entrada', ProdutoController.registrarEntrada);
+//router.post('/Pessoas/:id/entrada', ProdutoController.registrarEntrada);
 
 // Rota para registrar saída de estoque
-//router.post('/pessoas/:id/saida', ProdutoController.registrarSaida);
+//router.post('/Pessoas/:id/saida', ProdutoController.registrarSaida);
 
 module.exports = router;
