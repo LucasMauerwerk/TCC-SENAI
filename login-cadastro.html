@@ -58,8 +58,11 @@
     })
       .then(response => response.json())
       .then(data => {
+        document.getElementById('nome').value = ''
+        document.getElementById('whatsapp').value = ''
+        document.getElementById('endereco').value = ''
+        document.getElementById('pswd').value = ''
         alert('Pessoa cadastrada com sucesso!');
-        window.location.href = "index.html";
       })
       .catch(error => alert(error));
   }
