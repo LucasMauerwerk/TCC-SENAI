@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>login</title>
   <link rel="icon" type="image/png" href="front-end/assents/Rectangle.png" />
   <link rel="stylesheet" type="text/css" href="front-end/styles/login-cadastro.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="main">  
-        <input type="checkbox" id="chk" aria-hidden="true">
-    
-          <div class="signup">
-            <div class="form">
-              <label for="chk" aria-hidden="true">Sign up</label>
-              <input type="text" name="nome" id="nome" placeholder="Nome" required="">
-              <input type="number" name="whatsapp" id="whatsapp" placeholder="WhatsApp" required="">
-              <input type="text" name="endereco" id="endereco" placeholder="Endereço" required="">
-              <input type="password" name="pswd" id="pswd" placeholder="Senha" required="">
-              <button onclick="cadastrarPessoa()">Sign up</button>
-            </div>
-          </div>
-    
-          <div class="login">
-            <div class="form">
-              <label for="chk" aria-hidden="true">Login</label>
-              <input type="email" name="whatsapp" id="loginWhatsapp" placeholder="WhatsApp" required="">
-              <input type="password" name="pswd" id="loginSenha" placeholder="Senha" required="">
-              <button onclick="loginPessoa()">Login</button>
-            </div>
-          </div>
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="signup">
+      <div class="form">
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome" required="">
+        <input type="number" name="whatsapp" id="whatsapp" placeholder="WhatsApp" required="">
+        <input type="text" name="endereco" id="endereco" placeholder="Endereço" required="">
+        <input type="password" name="pswd" id="pswd" placeholder="Senha" required="">
+        <button onclick="cadastrarPessoa()">Sign up</button>
       </div>
-  
+    </div>
+
+    <div class="login">
+      <div class="form">
+        <label for="chk" aria-hidden="true">Login</label>
+        <input type="email" name="whatsapp" id="loginWhatsapp" placeholder="WhatsApp" required="">
+        <input type="password" name="pswd" id="loginSenha" placeholder="Senha" required="">
+        <button onclick="loginPessoa()">Login</button>
+      </div>
+    </div>
+  </div>
+
 </body>
 <script>
   function cadastrarPessoa() {
@@ -51,15 +53,15 @@
     // Faz a solicitação POST para o backend
     fetch('http://localhost:3000/api/pessoas', {
       method: 'POST',
-      headers: {'Content-Type': 'application/json'},
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(pessoa)
     })
-    .then(response => response.json())
-    .then(data => {
-      alert('Pessoa cadastrada com sucesso!');
-      window.location.href = "index.html";
-    })
-    .catch(error => alert(error));
+      .then(response => response.json())
+      .then(data => {
+        alert('Pessoa cadastrada com sucesso!');
+        window.location.href = "index.html";
+      })
+      .catch(error => alert(error));
   }
 
   function loginPessoa() {
@@ -76,19 +78,16 @@
     // Faz a solicitação POST para o backend para verificar login
     fetch('http://localhost:3000/api/login', {
       method: 'POST',
-      headers: {'Content-Type': 'application/json'},
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(dadosLogin)
     })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
+      .then(response => response.json())
+      .then(data => {
         alert('Login bem-sucedido!');
-        window.location.href = "home.html"; // Redireciona para a página inicial
-      } else {
-        alert('Falha no login: ' + data.message);
-      }
-    })
-    .catch(error => alert(error));
+        window.location.href = "index.html"; // Redireciona para a página inicial
+      })
+      .catch(error => alert('Falha no login!'));
   }
 </script>
+
 </html>

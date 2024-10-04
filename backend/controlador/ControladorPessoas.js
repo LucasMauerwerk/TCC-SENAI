@@ -65,8 +65,8 @@ const PessoasController = {
                 where: {
                     whatsapp: req.body.whatsapp // Usa o e-mail que veio do frontend
                 }
-            });whatsapp
-          if(req.body.senha == cliente.senha){
+            })
+            if (req.body.senha == cliente.senha) {
                 res.json(cliente)
             } else {
                 res.status(400).send('whatsapp ou senha incorreta')
