@@ -38,22 +38,23 @@
       </ul>
       <p>Total: R$ <span id="total-price">0.00</span></p>
 
-          <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-             Pagar
-            </button>
-          </p>
-          <div style="min-height: 120px;">
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card card-body" style="width: 300px;">
-                Pagamento realizado com sucesso!! <br> Praço de entrega é de 35 minutos! <p style="font-size:20px">
-                  &#128178; &#128176; &#129297;
-                  </p>
-                  
-              </div>
-            </div>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+          aria-expanded="false" aria-controls="collapseWidthExample">
+          Pagar
+        </button>
+      </p>
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" style="width: 300px;">
+            Pagamento realizado com sucesso!! <br> Praço de entrega é de 35 minutos! <p style="font-size:20px">
+              &#128178; &#128176; &#129297;
+            </p>
+
           </div>
         </div>
+      </div>
+    </div>
 
 
 
@@ -282,21 +283,7 @@
       </a>
       <p class="carda">CARDAPIO</p>
     </div>
-    <div class="comi-car">
-
-      <div class="c-01">
-        <div class="-c"><img src="front-end/assents/sashimi.png" alt="" style="width: 10rem;"></div>
-        <div class="des">Sashimi <br> Melhor salmaão do Brasil <br>MAIS PEDIDO</div>
-        <div class="comprar">
-          <div class="preco">R$50,00</div>
-          <div class="add" style="display: flex;"> <button onclick="addToCart('sashimi', 50)"
-              style="border-radius: 50px; margin: 0%; border: 0cap; background-color: rgb(0, 255, 64);">+</button>
-          </div>
-        </div>
-      </div>
-      </a>
-      <hr>
-
+    <div class="comi-car" id="comi-car">
     </div>
   </div>
 
@@ -422,12 +409,13 @@
                             <div class="c01"><img src="${comida.linkimg}" alt="" style="width: 10rem;"></div>
                             <div class="des">${comida.descricao}</div>
                             <div class="preco">${comida.preco}</div>
-                            <div class="add" style="display: flex;"> <button onclick="addToCart('sashimi', ${comida.preco})"
+                            <div class="add" style="display: flex;">
+                            <button onclick="addToCart('sashimi', ${comida.preco})"
                             style="border-radius: 50px; margin: 0%; border: 0cap; background-color: rgb(0, 255, 64);">+</button>
                              </div>
                              </div>
                         `;
-                        
+
 
             listaNoFront.appendChild(cartaoComida);
           }
