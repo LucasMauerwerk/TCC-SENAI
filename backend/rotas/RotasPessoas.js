@@ -17,6 +17,9 @@ router.put('/pessoas/:id', ProdutoController.updatePessoas);
 // Rota para deletar um produto
 router.delete('/pessoas/:id', ProdutoController.deletePessoas);
 
+// Rota para deletar um produto
+router.post('/login', ProdutoController.login);
+
 // Rota para registrar entrada de estoque
 //router.post('/Pessoas/:id/entrada', ProdutoController.registrarEntrada);
 
