@@ -20,6 +20,9 @@ comidas.init({
     },
     peso: {
         type: DataTypes.STRING(45)
+    },
+    linkimg: {
+        type: DataTypes.STRING(200)
     }
 }, {
     sequelize,

@@ -67,7 +67,7 @@ CREATE TABLE `comidas` (
 
 LOCK TABLES `comidas` WRITE;
 /*!40000 ALTER TABLE `comidas` DISABLE KEYS */;
-INSERT INTO `comidas` VALUES (1,'Sashimi',5.50,'Cebola crispy e gergilim','5g','front-end/assents/sushi.png'),(2,'Sashimi',5.50,'Cebola crispy e gergilim','5g','front-end/assents/sushi.png'),(3,'Sashimi',5.50,'Cebola crispy e gergilim','5g','front-end/assents/sushi.png'),(4,'Sashimii',5.50,'Cebola crispy e gergilim','5g','front-end/assents/sushi.png'),(5,'Uramaki',7.50,'Cream Cheese e cebolinha','7g','front-end/assents/sushi.png'),(6,'Uramaki',7.50,'Cream Cheese e cebolinha','7g','front-end/assents/sushi.png'),(7,'Uramaki',7.50,'Cream Cheese e cebolinha','7g','front-end/assents/sushi.png'),(8,'Uramaki',7.50,'Cream Cheese e cebolinha','7g','front-end/assents/sushi.png'),(9,'Temaki',40.50,'Cream Cheese e cebolinha','50g','front-end/assents/sushi.png'),(10,'Temaki',40.50,'Cream Cheese e cebolinha','50g','front-end/assents/sushi.png'),(11,'Temaki',40.50,'Cream Cheese e cebolinha','50g','front-end/assents/sushi.png'),(12,'Temaki',40.50,'Cream Cheese e cebolinha','50g','front-end/assents/sushi.png');
+INSERT INTO `comidas` VALUES (1,'Sashimi',5.50,'Cebola crispy e gergilim','5g','front-end/assents/sashimi.png'),(2,'Sashimi',5.50,'Cebola crispy e gergilim','5g','front-end/assents/sashimi.png'),(3,'Sashimi',5.50,'Cebola crispy e gergilim','5g','front-end/assents/sashimi.png'),(4,'Sashimii',5.50,'Cebola crispy e gergilim','5g','front-end/assents/sashimi.png'),(5,'Uramaki',7.50,'Cream Cheese e cebolinha','7g','front-end/assents/sushi.png'),(6,'Uramaki',7.50,'Cream Cheese e cebolinha','7g','front-end/assents/sushi.png'),(7,'Uramaki',7.50,'Cream Cheese e cebolinha','7g','front-end/assents/sushi.png'),(8,'Uramaki',7.50,'Cream Cheese e cebolinha','7g','front-end/assents/sushi.png'),(9,'Temaki',40.50,'Cream Cheese e cebolinha','50g','front-end/assents/temaki.png'),(10,'Temaki',40.50,'Cream Cheese e cebolinha','50g','front-end/assents/temaki.png'),(11,'Temaki',40.50,'Cream Cheese e cebolinha','50g','front-end/assents/temaki.png'),(12,'Temaki',40.50,'Cream Cheese e cebolinha','50g','front-end/assents/temaki.png');
 /*!40000 ALTER TABLE `comidas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -105,13 +105,13 @@ DROP TABLE IF EXISTS `pessoas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `pessoas` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `idlogin` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) NOT NULL,
   `whatsapp` varchar(45) NOT NULL,
   `endereco` varchar(255) NOT NULL,
   `senha` varchar(45) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`idlogin`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -120,7 +120,7 @@ CREATE TABLE `pessoas` (
 
 LOCK TABLES `pessoas` WRITE;
 /*!40000 ALTER TABLE `pessoas` DISABLE KEYS */;
-INSERT INTO `pessoas` VALUES (1,'TESTE','TESTE','TESTE','TESTE'),(2,'Lucas M.','47 30419121','R. Dr Blumenau','1236##');
+INSERT INTO `pessoas` VALUES (1,'TESTE','TESTE','TESTE','TESTE'),(2,'Lucas M.','47 30419121','R. Dr Blumenau','1236##'),(3,'gui','17238','asjkdhfh','teste');
 /*!40000 ALTER TABLE `pessoas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -133,4 +133,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-08 20:55:48
+-- Dump completed on 2024-10-10 20:47:05
